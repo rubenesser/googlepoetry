@@ -31,7 +31,7 @@
 
 
 
-    <div>
+    <div class = 'image'>
 
         <p id = 'result'></p>
 
@@ -43,7 +43,7 @@
         <audio controls id='audioplay'>
               <source src="assets/audio/audio_poem_short.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
-              </audio>
+        </audio>
     </div>
 
 
@@ -63,7 +63,19 @@
                 </p>
             </div>
 
-      <script src="script.js"></script>
+      <script src="script.js">
+      var audio = new Audio("http://music.ogg" ) ;
+
+audio.oncanplaythrough = function(){
+audio.play();
+}
+
+audio.loop = true;
+
+audio.onended = function(){
+audio.play();
+}
+</script>
 
     </body>
 </html>

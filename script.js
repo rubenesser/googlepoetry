@@ -1,7 +1,6 @@
 const button = document.querySelector('button');
 
-function showImages(){
-  const para = document.querySelector('p');
+function setImageInTime() {
   const images =
   [
     { timecode: 1000, imgUrl: 'assets/images/my-life_01.png' },
@@ -9,16 +8,26 @@ function showImages(){
     { timecode: 3000, imgUrl: 'assets/images/my-life_03.jpg' },
     { timecode: 4000, imgUrl: 'assets/images/my-life_04.jpg' },
   ]
-  para.innerHTML = 'images';
 }
 
-button.addEventListener('click', showImages);
+function playAudio() {
+  const audio = document.querySelector('audio')
+  audio.addEventListener(play);
+}
+
+function showImages(){
+  const para = document.querySelector('p');
+  para.innerHTML = setImageInTime;
+}
+
+button.addEventListener('click', showImages, playAudio);
+
 
 
 
 /*
 
-function setImageInTime() {
+
 
   }
 
