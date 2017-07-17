@@ -1,6 +1,6 @@
-const button = document.querySelector('button');
+//const button = document.querySelector('button');
 
-function setImageInTime() {
+function setImagesInTime() {
   const images =
   [
     { timecode: 1000, imgUrl: 'assets/images/my-life_01.png' },
@@ -8,11 +8,22 @@ function setImageInTime() {
     { timecode: 3000, imgUrl: 'assets/images/my-life_03.jpg' },
     { timecode: 4000, imgUrl: 'assets/images/my-life_04.jpg' },
   ]
+
+  for (const image of images) {
+    window.setTimeout(function() {
+      setImageInTime(image)
+    }, image.timecode)
+  }
+}
+
+function setImageInTime(image) {
+  const para = document.querySelector('p');
+  para.innerHTML = '<img src="' + image.imgUrl + '">';
 }
 
 function playAudio() {
   const audio = document.querySelector('audio')
-  audio.addEventListener(play);
+  audio.addEventListener('play', setImagesInTime);
 }
 
 function showImages(){
@@ -20,7 +31,10 @@ function showImages(){
   para.innerHTML = setImageInTime;
 }
 
-button.addEventListener('click', showImages, playAudio);
+const audio = document.querySelector('audio')
+audio.addEventListener('play', setImagesInTime);
+
+//button.addEventListener('click', showImages, playAudio);
 
 
 
