@@ -8,22 +8,23 @@
 function setImagesInTime() {
   const images =
   [
-    { timecode: 1150, imgUrl: 'assets/images/my-life_01.png', lineId: 'line1' },
-    { timecode: 1420, imgUrl: 'assets/images/my-life_02.jpeg', lineId: 'line1' },
-    { timecode: 2500, imgUrl: 'assets/images/had_stood_01.jpg', lineId: 'line2' },
+    { timecode: 1080, imgUrl: 'assets/images/my-life_01.png', lineId: 'line1' },
+    { timecode: 1400, imgUrl: 'assets/images/my-life_02.jpeg', lineId: 'line1' },
+    { timecode: 2200, imgUrl: 'assets/images/had_stood_01.jpg', lineId: 'line2' },
     { timecode: 2800, imgUrl: 'assets/images/had_stood_03.jpg', lineId: 'line2' },
-    { timecode: 3500, imgUrl: 'assets/images/loaded_gun_01.jpeg' },
-    { timecode: 3800, imgUrl: 'assets/images/loaded_gun_02.jpeg' },
-    { timecode: 4200, imgUrl: 'assets/images/loaded_gun_03.jpeg' },
-    { timecode: 5000, imgUrl: 'assets/images/in_corners_01.jpg' },
-    { timecode: 5800, imgUrl: 'assets/images/in_corners_02.jpg' },
-    { timecode: 7000, imgUrl: 'assets/images/had_stood_03.jpg' },
-    { timecode: 8000, imgUrl: 'assets/images/had_stood_03.jpg' },
-    { timecode: 9000, imgUrl: 'assets/images/had_stood_03.jpg' },
-    { timecode: 10000, imgUrl: 'assets/images/had_stood_03.jpg' },
-    { timecode: 11000, imgUrl: 'assets/images/had_stood_03.jpg' },
-    { timecode: 12000, imgUrl: 'assets/images/had_stood_03.jpg' },
-    { timecode: 13000, imgUrl: 'assets/images/had_stood_03.jpg' },
+    { timecode: 3800, imgUrl: 'assets/images/loaded_gun_01.jpeg', lineId: 'line3' },
+    { timecode: 4500, imgUrl: 'assets/images/loaded_gun_03.jpeg', lineId: 'line3' },
+    { timecode: 5500, imgUrl: 'assets/images/in_corners_01.jpg', lineId: 'line4' },
+    { timecode: 5900, imgUrl: 'assets/images/in_corners_02.jpg', lineId: 'line4' },
+    { timecode: 7000, imgUrl: 'assets/images/till_a_day_02.jpg', lineId: 'line5' },
+    { timecode: 7600, imgUrl: 'assets/images/the_owner_01.jpg' , lineId: 'line5'},
+    { timecode: 8200, imgUrl: 'assets/images/passed_03.jpeg' , lineId: 'line5'},
+    { timecode: 9300, imgUrl: 'assets/images/identified_01.jpg' , lineId: 'line5'},
+    { timecode: 10000, imgUrl: 'assets/images/identified_05.jpg' , lineId: 'line5'},
+    { timecode: 11500, imgUrl: 'assets/images/carried_me_away_01.jpg' , lineId: 'line5'},
+    { timecode: 12000, imgUrl: 'assets/images/carried_me_away_04.jpg' , lineId: 'line5'},
+    { timecode: 12800, imgUrl: 'assets/images/carried_me_away_06.jpg' , lineId: 'line5'},
+
   ]
 
 // This is the loop runs the timecode.
@@ -49,6 +50,7 @@ function setImageInTime(image) {
 // This enables the function when click the audio
 const audio = document.querySelector('audio')
 audio.addEventListener('play', setImagesInTime);
+
 // audio.addEventListener('pause', HandlePause);
 
 // function HandlePause() {}
