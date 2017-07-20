@@ -8,6 +8,7 @@
 function setImagesInTime() {
   const images =
   [
+    { timecode: 1000, imgUrl: 'assets/images/GooglePoetry_logo.jpg', lineId: 'line0' },
     { timecode: 1080, imgUrl: 'assets/images/my-life_01.png', lineId: 'line1' },
     { timecode: 1400, imgUrl: 'assets/images/my-life_02.jpeg', lineId: 'line1' },
     { timecode: 2200, imgUrl: 'assets/images/had_stood_01.jpg', lineId: 'line2' },
@@ -17,13 +18,13 @@ function setImagesInTime() {
     { timecode: 5500, imgUrl: 'assets/images/in_corners_01.jpg', lineId: 'line4' },
     { timecode: 5900, imgUrl: 'assets/images/in_corners_02.jpg', lineId: 'line4' },
     { timecode: 7000, imgUrl: 'assets/images/till_a_day_02.jpg', lineId: 'line5' },
-    { timecode: 7600, imgUrl: 'assets/images/the_owner_01.jpg' , lineId: 'line5'},
-    { timecode: 8200, imgUrl: 'assets/images/passed_03.jpeg' , lineId: 'line5'},
-    { timecode: 9300, imgUrl: 'assets/images/identified_01.jpg' , lineId: 'line5'},
-    { timecode: 10000, imgUrl: 'assets/images/identified_05.jpg' , lineId: 'line5'},
-    { timecode: 11500, imgUrl: 'assets/images/carried_me_away_01.jpg' , lineId: 'line5'},
-    { timecode: 12000, imgUrl: 'assets/images/carried_me_away_04.jpg' , lineId: 'line5'},
-    { timecode: 12800, imgUrl: 'assets/images/carried_me_away_06.jpg' , lineId: 'line5'},
+    { timecode: 7700, imgUrl: 'assets/images/the_owner_01.jpg' , lineId: 'line6'},
+    { timecode: 8300, imgUrl: 'assets/images/passed_03.jpeg' , lineId: 'line7'},
+    { timecode: 9300, imgUrl: 'assets/images/identified_01.jpg' , lineId: 'line8'},
+    { timecode: 10000, imgUrl: 'assets/images/identified_05.jpg' , lineId: 'line8'},
+    { timecode: 11000, imgUrl: 'assets/images/carried_me_away_01.jpg' , lineId: 'line9'},
+    { timecode: 11400, imgUrl: 'assets/images/carried_me_away_04.jpg' , lineId: 'line9'},
+    { timecode: 12000, imgUrl: 'assets/images/carried_me_away_06.jpg' , lineId: 'line10'},
 
   ]
 

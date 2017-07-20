@@ -6,22 +6,29 @@ p
 {
       max-height: 400px;
       background-size: cover;
-      position:
+      margin: 10px 0 25px 0;
+      width: 600px;
   }
 
 .green-background{
-  background-color: green;
+  background-color: #c2e1cb;
 }
 
 img{
   height: 400px;
-  margin: auto;
-  width: 40%;
+  margin: 0 auto;
+  width: 600px;
+}
+
+audio
+{
+  margin: 30px auto;
+  width: 600px;
 }
 
 
 .container {
-margin: 110px auto;
+margin: 10px 0 25px 0;
 position: relative;
 padding: 0 auto
 }
